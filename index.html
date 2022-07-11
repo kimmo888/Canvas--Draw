@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dibujando con el Mouse</h1>
+    <style>canvas {border:1px solid black; }</style>
+    <canvas width="500" height="500" id="area_dibujo"></canvas>
+    <p>Usa el Mouse para dibujar</p>
+    <p>
+        <label for="colorD">Color del trazo</label>
+        <input type="color" name="color" id="colorD">
+        <label for="grosorD">Tamaño del trazo</label>
+        <input type="range" name="grosor" id="grosorD" min="1" max="5" value="2">
+        <input type="button" value="Limpiar" onclick="location.reload()"/>
+    </p>
+    <script src="./js/eventos.js"></script>
+</body>
+</html>
